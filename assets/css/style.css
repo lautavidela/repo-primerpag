@@ -11,29 +11,8 @@ body {
 }
 
 /* BARRA DE NAVEGACION */
-
-header {
-    background-color: #0084FF;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__nav a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 0 20px;
-}
-
-.header__nav a:hover {
-    text-decoration: underline;
-}
-
-.header__nav a:active {
-    background: #0366c1;
-    border-radius: 10px;
+.navbar-brand img {
+    width: 100px;
 }
 
 /* INICIO */
@@ -172,3 +151,4 @@ footer div p {
 span {
     color: #0084FF;
 }
+
