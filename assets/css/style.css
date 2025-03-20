@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-    background-color: #c0c2c3;
+    background-color: #b7b9b9;
 }
 
 /* INICIO */
@@ -148,22 +148,42 @@ svg {
 
 footer {
     display: flex;
+    flex-direction: column;
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: #b7b9b9;
     align-items: center;
     justify-content: center;
     position: absolute;
     bottom: 0;
 }
 
+.redes-sociales {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+footer .logo-instagram {
+    height: auto;
+    width: 30px;
+}
+
+footer .logo-facebook {
+    height: auto;
+    width: 30px;
+}
+
 footer div p {
-    color: white;
+    color: black;
 }
 
 span {
     color: #0084FF;
 }
+
+/* MEDIA QUERYS */
 
 @media (max-width: 991px) {
     .contenedor-info{
