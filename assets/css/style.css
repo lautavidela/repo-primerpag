@@ -11,8 +11,13 @@ body {
 }
 
 /* BARRA DE NAVEGACION */
+
 .navbar-brand img {
     width: 100px;
+}
+
+nav {
+    background-color: #c0c2c3;
 }
 
 /* INICIO */
@@ -50,16 +55,17 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .imagen-donde-estamos {
     height: 500px;
-    width: 600px;
+    width: auto;
 }
 
 .imagen-gimnasio {
     height: 500px;
-    width:600px;
+    width: auto;
 }
 
 /* MI CUENTA */
@@ -87,6 +93,7 @@ svg {
     border-bottom: 5px solid black;
     padding: 15px;
     margin: 0 100px 0 100px;
+    
 }
 
 .container-ventajas {
@@ -115,10 +122,16 @@ svg {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-.flyer-actividad {
-    height: 800px;
+.actividad-1 img {
+    width: 500px;
+    height: auto;
+}
+.actividad-2 img {
+    width: 500px;
+    height: auto;
 }
 
 /* CONTACTO */
@@ -152,3 +165,43 @@ span {
     color: #0084FF;
 }
 
+@media (max-width: 991px) {
+    .contenedor-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contenedor-flyers{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .imagen-donde-estamos, .imagen-gimnasio{
+        width: 300px;
+        height: auto;
+        align-self: center;
+    }
+
+    .contenedor-info .donde-estamos, .nuestro-lugar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .actividad-1 img, .actividad-2 img{
+        width: 300px;
+        height: auto;
+        align-self: center;
+    }
+
+    .actividad-2 img{
+        margin-bottom: 30px;
+    }
+
+    .contenedor-flyers .actividad-1, .actividad-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
