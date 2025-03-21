@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    box-sizing: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Mulish", serif;
 }
 
@@ -10,10 +11,14 @@ body {
     padding-bottom: 100px;
 }
 
+main {
+    flex: 1;
+}
+
 /* BARRA DE NAVEGACION */
 
 .navbar-brand img {
-    width: 100px;
+    width: 90px;
 }
 
 nav {
@@ -149,7 +154,7 @@ svg {
 footer {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 110px;
     width: 100%;
     background-color: #b7b9b9;
     align-items: center;
@@ -159,10 +164,10 @@ footer {
 }
 
 .redes-sociales {
-    margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 footer .logo-instagram {
@@ -183,6 +188,11 @@ span {
     color: #0084FF;
 }
 
+
+/* PSEUDOCLASES */
+
+
+
 /* MEDIA QUERYS */
 
 @media (max-width: 991px) {
@@ -199,6 +209,10 @@ span {
         width: 300px;
         height: auto;
         align-self: center;
+    }
+
+    .imagen-gimnasio{
+        margin-bottom: 30px;
     }
 
     .contenedor-info .donde-estamos, .nuestro-lugar{
@@ -223,5 +237,9 @@ span {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    footer{
+        height: 135px;
     }
 }
