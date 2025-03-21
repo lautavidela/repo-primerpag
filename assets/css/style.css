@@ -75,11 +75,50 @@ h2 {
 
 /* MI CUENTA */
 
-.dni {
-    text-align: left;
+
+.contenedor-gestion-login{
+    display: flex;
+    justify-content: space-between;
 }
 
+.gestion-de-cuentas {
+    padding-left: 100px;
+    font-size: 18px;
+}
 
+.logo-mi-cuenta {
+    width: auto;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.lista-gestion-de-cuentas {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.login-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: center;
+    border: 1px solid #b7b9b9;
+    border-radius: 10px;
+    width: 700px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.btn-entrar {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
 /* PLAN */
 
 .titulo-planes {
@@ -205,6 +244,8 @@ span {
 }
 
 @media (max-width: 480px) {
+
+    /* INICIO */
     .imagen-donde-estamos, .imagen-gimnasio{
         width: 300px;
         height: auto;
@@ -222,6 +263,7 @@ span {
         justify-content: center;
     }
 
+    /* OTRAS ACTIVIDADES */
     .actividad-1 img, .actividad-2 img{
         width: 300px;
         height: auto;
@@ -237,6 +279,25 @@ span {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    /* MI CUENTA */
+    .contenedor-gestion-login{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .gestion-de-cuentas{
+        width: 400px;
+        padding-left: 20px;
+    }
+
+    .logo-mi-cuenta{
+        padding-left: 10px;
+    }
+
+    .login-usuario{
+        width: auto;
     }
 
     footer{
