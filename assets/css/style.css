@@ -234,6 +234,12 @@ span {
 
 /* MEDIA QUERYS */
 
+@media (max-width: 1550px) {
+    .contenedor-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 @media (max-width: 991px) {
     .contenedor-info{
         grid-template-columns: repeat(1, 1fr);
