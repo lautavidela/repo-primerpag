@@ -74,8 +74,6 @@ h2 {
 }
 
 /* MI CUENTA */
-
-
 .contenedor-gestion-login{
     display: flex;
     justify-content: space-between;
@@ -137,7 +135,6 @@ svg {
     border-bottom: 5px solid black;
     padding: 15px;
     margin: 0 100px 0 100px;
-    
 }
 
 .container-ventajas {
@@ -157,6 +154,28 @@ svg {
     justify-items: center;
     padding: 30px;
     margin: 0 100px 0 100px;
+}
+
+/* CSS - PLAN (VISTA MOBILE) */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    display: none;
+}
+
+.card-1, .card-2, .card-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    padding-top: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 /* ACTIVIDADES */
@@ -247,6 +266,17 @@ span {
     .contenedor-flyers{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* PLAN */
+    .container-grid-plan{
+        display: none;
+    }
+
+    .container-cards{
+        display: block;
+        display: flex;
+        margin-bottom: 80px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -304,6 +334,17 @@ span {
 
     .login-usuario{
         width: auto;
+    }
+
+    /* PLAN */
+    .container-grid-plan{
+        display: none;
+    }
+
+    .container-cards{
+        display: block;
+        display: flex;
+        margin-bottom: 80px;
     }
 
     /* CONTACTO */
