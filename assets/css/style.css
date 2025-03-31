@@ -190,7 +190,9 @@ svg {
 }
 
 .li-cards-mobile{
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .precio-card{
