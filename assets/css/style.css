@@ -156,7 +156,7 @@ svg {
     margin: 0 100px 0 100px;
 }
 
-/* CSS - PLAN (VISTA MOBILE) */
+/* PLAN (VISTA MOBILE) */
 .container-cards {
     display: flex;
     justify-content: center;
@@ -176,6 +176,27 @@ svg {
     text-align: center;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+.titulo-cards-mobile {
+    padding-bottom: 10px;
+}
+
+.ul-cards-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-image: url(../img/check.png);
+}
+
+.li-cards-mobile{
+    vertical-align: middle;
+}
+
+.precio-card{
+    width: 100%;
+    background-color: #0084FF;
+    border-radius: 0 0 10px 10px;
 }
 
 /* ACTIVIDADES */
