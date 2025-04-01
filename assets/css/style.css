@@ -17,12 +17,20 @@ main {
 
 /* BARRA DE NAVEGACION */
 
+nav {
+    background-color: #b7b9b9;
+}
+
 .navbar-brand img {
     width: 90px;
 }
 
-nav {
-    background-color: #b7b9b9;
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
 }
 
 /* INICIO */
@@ -66,11 +74,21 @@ h2 {
 .imagen-donde-estamos {
     height: 500px;
     width: auto;
+    border-radius: 20px;
+}
+
+.imagen-donde-estamos:hover {
+    transform: scale(1.05);
 }
 
 .imagen-gimnasio {
     height: 500px;
     width: auto;
+    border-radius: 20px;
+}
+
+.imagen-gimnasio:hover {
+    transform: scale(1.05);
 }
 
 /* MI CUENTA */
@@ -110,12 +128,23 @@ h2 {
 }
 
 .btn-entrar {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 50px;
     width: 100%;
     padding: 10px;
     font-weight: bold;
+}
+
+.btn-entrar:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(208, 208, 208);
+    transform: scale(1.02);
+}
+
+.btn-entrar:active {
+    transform: scale(0.95);
+    background-color: black;
 }
 /* PLAN */
 
@@ -156,6 +185,20 @@ svg {
     margin: 0 100px 0 100px;
 }
 
+.precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    background-color: #0084FF;
+    border-radius: 20px;
+}
+
+.precio:hover {
+    transform: scale(1.05);
+}
+
 /* PLAN (VISTA MOBILE) */
 .container-cards {
     display: flex;
@@ -177,6 +220,11 @@ svg {
     border: 1px solid black;
     border-radius: 10px;
 }
+
+.card-1:hover, .card-2:hover, .card-3:hover {
+    transform: scale(1.05);
+}
+
 
 .titulo-cards-mobile {
     padding-bottom: 10px;
@@ -256,9 +304,17 @@ footer .logo-instagram {
     width: 30px;
 }
 
+.logo-instagram:hover {
+    transform: scale(1.1);
+}
+
 footer .logo-facebook {
     height: auto;
     width: 30px;
+}
+
+.logo-facebook:hover {
+    transform: scale(1.1);
 }
 
 footer div p {
@@ -268,10 +324,6 @@ footer div p {
 span {
     color: #0084FF;
 }
-
-
-/* PSEUDOCLASES */
-
 
 
 /* MEDIA QUERYS */
