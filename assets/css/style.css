@@ -1,432 +1,405 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Mulish", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", serif;
 }
 
 body {
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 100px;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
-
-/* BARRA DE NAVEGACION */
-
-nav {
-    background-color: #b7b9b9;
-}
-
-.navbar-brand img {
-    width: 90px;
-}
-
-.navbar-brand img:hover {
-    transform: scale(1.05);
-}
-
-.nav-item:hover {
-    transform: scale(1.05);
-}
-
-/* INICIO */
 
 h1 {
-    font-size: 40px;
-    padding: 30px;
-    text-align: center;
-}
-
-.contenedor-imagen-inicio {
-    width: 100%;
-    height: 200px;
-}
-
-.imagen-inicio {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-p {
-    text-align: center;
-    padding: 20px;
+  font-size: 40px;
+  padding: 30px;
+  text-align: center;
 }
 
 h2 {
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+
+span {
+  color: #0084FF;
+}
+
+/* BARRA DE NAVEGACION */
+nav {
+  background-color: #b7b9b9;
+}
+nav .navbar-brand img {
+  width: 90px;
+}
+nav .navbar-brand img:hover {
+  transform: scale(1.05);
+}
+nav .nav-item:hover {
+  transform: scale(1.05);
+}
+
+/* INICIO */
+.contenedor-imagen-inicio {
+  width: 100%;
+  height: 200px;
+}
+.contenedor-imagen-inicio .imagen-inicio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  text-align: center;
+  padding: 20px;
 }
 
 .contenedor-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
-
-.imagen-donde-estamos {
-    height: 500px;
-    width: auto;
-    border-radius: 20px;
+.contenedor-info .imagen-donde-estamos {
+  height: 500px;
+  width: auto;
+  border-radius: 20px;
 }
-
-.imagen-donde-estamos:hover {
-    transform: scale(1.05);
+.contenedor-info .imagen-donde-estamos:hover {
+  transform: scale(1.05);
 }
-
-.imagen-gimnasio {
-    height: 500px;
-    width: auto;
-    border-radius: 20px;
+.contenedor-info .imagen-gimnasio {
+  height: 500px;
+  width: auto;
+  border-radius: 20px;
 }
-
-.imagen-gimnasio:hover {
-    transform: scale(1.05);
+.contenedor-info .imagen-gimnasio:hover {
+  transform: scale(1.05);
 }
 
 /* MI CUENTA */
-.contenedor-gestion-login{
-    display: flex;
-    justify-content: space-between;
+.contenedor-gestion-login {
+  display: flex;
+  justify-content: space-between;
+}
+.contenedor-gestion-login .gestion-de-cuentas {
+  padding-left: 100px;
+  font-size: 18px;
+}
+.contenedor-gestion-login .gestion-de-cuentas .logo-mi-cuenta {
+  width: auto;
+  height: 300px;
+  padding-top: 20px;
+}
+.contenedor-gestion-login .gestion-de-cuentas .lista-gestion-de-cuentas {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.contenedor-gestion-login .login-usuario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: center;
+  border: 1px solid #b7b9b9;
+  border-radius: 10px;
+  width: 700px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.contenedor-gestion-login .login-usuario .btn-entrar {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 50px;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+}
+.contenedor-gestion-login .login-usuario .btn-entrar:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(208, 208, 208);
+  transform: scale(1.02);
+}
+.contenedor-gestion-login .login-usuario .btn-entrar:active {
+  transform: scale(0.95);
+  background-color: black;
 }
 
-.gestion-de-cuentas {
-    padding-left: 100px;
-    font-size: 18px;
-}
-
-.logo-mi-cuenta {
-    width: auto;
-    height: 300px;
-    padding-top: 20px;
-}
-
-.lista-gestion-de-cuentas {
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.login-usuario {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-self: center;
-    border: 1px solid #b7b9b9;
-    border-radius: 10px;
-    width: 700px;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.btn-entrar {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-radius: 50px;
-    width: 100%;
-    padding: 10px;
-    font-weight: bold;
-}
-
-.btn-entrar:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(208, 208, 208);
-    transform: scale(1.02);
-}
-
-.btn-entrar:active {
-    transform: scale(0.95);
-    background-color: black;
-}
 /* PLAN */
-
 .titulo-planes {
-    padding: 30px;
+  padding: 30px;
 }
 
-svg {
-    width: 30px;
+.container-grid-plan .container-planes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  border-bottom: 5px solid black;
+  padding: 15px;
+  margin: 0 100px 0 100px;
 }
-
-.container-planes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-    border-bottom: 5px solid black;
-    padding: 15px;
-    margin: 0 100px 0 100px;
+.container-grid-plan .container-ventajas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 5px solid black;
+  padding: 15px;
+  margin: 0 100px 0 100px;
 }
-
-.container-ventajas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    border-bottom: 5px solid black;
-    padding: 15px;
-    margin: 0 100px 0 100px;
+.container-grid-plan .container-ventajas svg {
+  width: 30px;
 }
-
-.container-precios {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    padding: 30px;
-    margin: 0 100px 0 100px;
+.container-grid-plan .container-precios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 30px;
+  margin: 0 100px 0 100px;
 }
-
-.precio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 60px;
-    background-color: #0084FF;
-    border-radius: 20px;
+.container-grid-plan .container-precios .precio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 60px;
+  background-color: #0084FF;
+  border-radius: 20px;
 }
-
-.precio:hover {
-    transform: scale(1.05);
+.container-grid-plan .container-precios .precio:hover {
+  transform: scale(1.05);
 }
 
 /* PLAN (VISTA MOBILE) */
 .container-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  display: none;
 }
-
-.card-1, .card-2, .card-3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    padding-top: 30px;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 10px;
+.container-cards .card-1,
+.container-cards .card-2,
+.container-cards .card-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  padding-top: 30px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
 }
-
-.card-1:hover, .card-2:hover, .card-3:hover {
-    transform: scale(1.05);
+.container-cards .card-1:hover,
+.container-cards .card-2:hover,
+.container-cards .card-3:hover {
+  transform: scale(1.05);
 }
-
-
-.titulo-cards-mobile {
-    padding-bottom: 10px;
+.container-cards .card-1 .titulo-cards-mobile,
+.container-cards .card-2 .titulo-cards-mobile,
+.container-cards .card-3 .titulo-cards-mobile {
+  padding-bottom: 10px;
 }
-
-.ul-cards-mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    list-style-image: url(../img/check.png);
+.container-cards .card-1 .ul-cards-mobile,
+.container-cards .card-2 .ul-cards-mobile,
+.container-cards .card-3 .ul-cards-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-image: url(../img/check.png);
 }
-
-.li-cards-mobile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-cards .card-1 .ul-cards-mobile .li-cards-mobile,
+.container-cards .card-2 .ul-cards-mobile .li-cards-mobile,
+.container-cards .card-3 .ul-cards-mobile .li-cards-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.precio-card{
-    width: 100%;
-    background-color: #0084FF;
-    border-radius: 0 0 10px 10px;
+.container-cards .card-1 .ul-cards-mobile .li-cards-mobile .svg-mobile,
+.container-cards .card-2 .ul-cards-mobile .li-cards-mobile .svg-mobile,
+.container-cards .card-3 .ul-cards-mobile .li-cards-mobile .svg-mobile {
+  width: 40px;
+}
+.container-cards .card-1 .precio-card,
+.container-cards .card-2 .precio-card,
+.container-cards .card-3 .precio-card {
+  width: 100%;
+  background-color: #0084FF;
+  border-radius: 0 0 10px 10px;
 }
 
 /* ACTIVIDADES */
-
 .contenedor-flyers {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
-
-.actividad-1 img {
-    width: 500px;
-    height: auto;
+.contenedor-flyers .actividad-1 img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
 }
-.actividad-2 img {
-    width: 500px;
-    height: auto;
+.contenedor-flyers .actividad-1 img:hover {
+  transform: scale(1.05);
+}
+.contenedor-flyers .actividad-2 img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+.contenedor-flyers .actividad-2 img:hover {
+  transform: scale(1.05);
 }
 
 /* CONTACTO */
-
 .titulo-contacto {
-    padding: 30px;
+  padding: 30px;
 }
 
 .form p {
-    text-align: left;
+  text-align: left;
 }
 
 /* FOOTER */
-
 footer {
-    display: flex;
-    flex-direction: column;
-    height: 110px;
-    width: 100%;
-    background-color: #b7b9b9;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  width: 100%;
+  background-color: #b7b9b9;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
 }
-
-.redes-sociales {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-bottom: 20px;
+footer .redes-sociales {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
 }
-
-footer .logo-instagram {
-    height: auto;
-    width: 30px;
+footer .redes-sociales .logo-instagram {
+  height: auto;
+  width: 30px;
 }
-
-.logo-instagram:hover {
-    transform: scale(1.1);
+footer .redes-sociales .logo-instagram:hover {
+  transform: scale(1.05);
 }
-
-footer .logo-facebook {
-    height: auto;
-    width: 30px;
+footer .redes-sociales .logo-facebook {
+  height: auto;
+  width: 30px;
 }
-
-.logo-facebook:hover {
-    transform: scale(1.1);
+footer .redes-sociales .logo-facebook:hover {
+  transform: scale(1.05);
 }
-
-footer div p {
-    color: black;
-}
-
-span {
-    color: #0084FF;
-}
-
 
 /* MEDIA QUERYS */
-
 @media (max-width: 1550px) {
-    .contenedor-info{
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .contenedor-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
 @media (max-width: 991px) {
-    .contenedor-info{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .contenedor-flyers{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    /* PLAN */
-    .container-grid-plan{
-        display: none;
-    }
-
-    .container-cards{
-        display: block;
-        display: flex;
-        margin-bottom: 80px;
-    }
+  .contenedor-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contenedor-flyers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* PLAN */
+  .container-grid-plan {
+    display: none;
+  }
+  .container-cards {
+    display: block;
+    display: flex;
+    margin-bottom: 80px;
+  }
 }
-
 @media (max-width: 480px) {
-
-    /* INICIO */
-    .imagen-donde-estamos, .imagen-gimnasio{
-        width: 300px;
-        height: auto;
-        align-self: center;
-    }
-
-    .imagen-gimnasio{
-        margin-bottom: 30px;
-    }
-
-    .contenedor-info .donde-estamos, .nuestro-lugar{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* OTRAS ACTIVIDADES */
-    .actividad-1 img, .actividad-2 img{
-        width: 300px;
-        height: auto;
-        align-self: center;
-    }
-
-    .actividad-2 img{
-        margin-bottom: 30px;
-    }
-
-    .contenedor-flyers .actividad-1, .actividad-2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* MI CUENTA */
-    .contenedor-gestion-login{
-        flex-direction: column;
-        padding-bottom: 30px;
-    }
-
-    .gestion-de-cuentas{
-        width: 400px;
-        padding-left: 20px;
-    }
-
-    .logo-mi-cuenta{
-        padding-left: 10px;
-    }
-
-    .login-usuario{
-        width: auto;
-    }
-
-    /* PLAN */
-    .container-grid-plan{
-        display: none;
-    }
-
-    .container-cards{
-        display: block;
-        display: flex;
-        margin-bottom: 80px;
-    }
-
-    /* CONTACTO */
-
-
-    /* FOOTER */
-    footer{
-        height: 135px;
-    }
+  /* BARRA DE NAVEGACION */
+  nav .nav-item:hover {
+    transform: none;
+    color: black;
+  }
+  /* INICIO */
+  .contenedor-info .imagen-donde-estamos,
+  .contenedor-info .imagen-gimnasio {
+    width: 300px;
+    height: auto;
+    align-self: center;
+  }
+  .contenedor-info .donde-estamos,
+  .contenedor-info .nuestro-lugar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagen-gimnasio {
+    margin-bottom: 30px;
+  }
+  /* OTRAS ACTIVIDADES */
+  .contenedor-flyers .actividad-1,
+  .contenedor-flyers .actividad-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-flyers .actividad-1 img,
+  .contenedor-flyers .actividad-2 img {
+    width: 300px;
+    height: auto;
+    align-self: center;
+  }
+  .contenedor-flyers .actividad-2 img {
+    margin-bottom: 30px;
+  }
+  /* MI CUENTA */
+  .contenedor-gestion-login {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .contenedor-gestion-login .gestion-de-cuentas {
+    width: 300px;
+    padding-left: 20px;
+  }
+  .contenedor-gestion-login .gestion-de-cuentas .logo-mi-cuenta {
+    padding-left: 10px;
+  }
+  .contenedor-gestion-login .login-usuario {
+    width: auto;
+  }
+  /* PLAN */
+  .container-grid-plan {
+    display: none;
+  }
+  .container-cards {
+    display: block;
+    display: flex;
+    margin-bottom: 80px;
+  }
+  /* CONTACTO */
+  /* FOOTER */
+  footer {
+    height: 135px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

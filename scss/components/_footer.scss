@@ -1,0 +1,34 @@
+@use "../utilities/mixins" as *;
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    width: 100%;
+    background-color: #b7b9b9;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+
+    .redes-sociales {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-bottom: 20px;
+
+        .logo-instagram {
+            height: auto;
+            width: 30px;
+            @include hover-scale;
+        }
+
+        .logo-facebook {
+            height: auto;
+            width: 30px;
+            @include hover-scale;
+        }        
+    }
+}

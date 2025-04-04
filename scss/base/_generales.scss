@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+span {
+    color: #0084FF;
+}

@@ -1,0 +1,125 @@
+@use "../base/variables" as *;
+@use "../utilities/mixins" as *;
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1550px) {
+    .contenedor-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .contenedor-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedor-flyers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* PLAN */
+    .container-grid-plan {
+        display: none;
+    }
+
+    .container-cards {
+        display: block;
+        display: flex;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* BARRA DE NAVEGACION */
+    nav .nav-item:hover {
+        transform: none;
+        color: black;
+    }
+
+    /* INICIO */
+    .contenedor-info {
+
+        .imagen-donde-estamos,
+        .imagen-gimnasio {
+            width: 300px;
+            height: auto;
+            align-self: center;
+        }
+
+        .donde-estamos,
+        .nuestro-lugar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .imagen-gimnasio {
+        margin-bottom: 30px;
+    }
+
+    /* OTRAS ACTIVIDADES */
+    .contenedor-flyers {
+
+        .actividad-1,
+        .actividad-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 300px;
+                height: auto;
+                align-self: center;
+            }
+        }
+
+        .actividad-2 {
+            img {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    /* MI CUENTA */
+    .contenedor-gestion-login {
+        flex-direction: column;
+        padding-bottom: 30px;
+
+        .gestion-de-cuentas {
+            width: 300px;
+            padding-left: 20px;
+
+            .logo-mi-cuenta {
+                padding-left: 10px;
+            }
+        }
+
+        .login-usuario {
+            width: auto;
+        }
+    }
+
+    /* PLAN */
+    .container-grid-plan {
+        display: none;
+    }
+
+    .container-cards {
+        display: block;
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    /* CONTACTO */
+
+
+    /* FOOTER */
+    footer {
+        height: 135px;
+    }
+}

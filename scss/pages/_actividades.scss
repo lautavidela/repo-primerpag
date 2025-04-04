@@ -1,0 +1,26 @@
+@use "../base/variables" as *;
+@use "../utilities/mixins" as *;
+
+/* ACTIVIDADES */
+
+.contenedor-flyers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-bottom: $padding-grande;
+
+    .actividad-1 img {
+        width: $ancho-imagen;
+        height: auto;
+        border-radius: $border-radius;
+        @include hover-scale;
+    }
+
+    .actividad-2 img {
+        width: $ancho-imagen;
+        height: auto;
+        border-radius: $border-radius;
+        @include hover-scale;
+    }
+}

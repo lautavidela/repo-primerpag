@@ -1,0 +1,56 @@
+@use "../base/variables" as *;
+
+/* MI CUENTA */
+
+.contenedor-gestion-login {
+    display: flex;
+    justify-content: space-between;
+
+    .gestion-de-cuentas {
+        padding-left: 100px;
+        font-size: 18px;
+
+        .logo-mi-cuenta {
+            width: auto;
+            height: 300px;
+            padding-top: $padding-general;
+        }
+        
+        .lista-gestion-de-cuentas {
+            padding-left: $padding-general;
+            padding-top: $padding-general;
+        }
+    }
+
+    .login-usuario {
+        display: flex;
+        flex-direction: column;
+        gap: $padding-general;
+        align-self: center;
+        border: 1px solid #b7b9b9;
+        border-radius: $border-radius;
+        width: 700px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+
+        .btn-entrar {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border-radius: 50px;
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+            &:hover {
+                background-color: rgb(0, 0, 0);
+                color: $color-gris-hover;
+                transform: scale(1.02);
+            }
+            &:active {
+                transform: scale(0.95);
+                background-color: black;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+@use "../base/variables" as *;
+@use "../utilities/mixins" as *;
+
+/* PLAN */
+
+.titulo-planes {
+    padding: $padding-grande;
+}
+
+.container-grid-plan {
+    .container-planes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+        border-bottom: 5px solid black;
+        padding: 15px;
+        margin: 0 100px 0 100px;
+    }
+
+    .container-ventajas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        border-bottom: 5px solid black;
+        padding: 15px;
+        margin: 0 100px 0 100px;
+
+        svg {
+            width: 30px;
+        }
+    }
+
+    .container-precios {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        padding: $padding-grande;
+        margin: 0 100px 0 100px;
+
+        .precio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 60px;
+            background-color: $color-azul;
+            border-radius: $border-radius-grande;
+            @include hover-scale;
+        }
+    }
+}
+
+/* PLAN (VISTA MOBILE) */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: $padding-grande;
+    display: none;
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        padding-top: $padding-grande;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: $border-radius;
+        @include hover-scale;
+
+        .titulo-cards-mobile {
+            padding-bottom: 10px;
+        }
+
+        .ul-cards-mobile {
+            display: flex;
+            flex-direction: column;
+            gap: $padding-general;
+            list-style-image: url(../img/check.png);
+
+            .li-cards-mobile {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .svg-mobile {
+                    width: 40px;
+                }
+            }
+        }
+
+        .precio-card {
+            width: 100%;
+            background-color: $color-azul;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

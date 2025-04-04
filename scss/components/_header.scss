@@ -1,0 +1,17 @@
+@use "../base/variables" as *;
+@use "../utilities/mixins" as *;
+
+/* BARRA DE NAVEGACION */
+
+nav {
+    background-color: #b7b9b9;
+    
+    .navbar-brand img {
+        width: 90px;
+        @include hover-scale
+    }
+
+    .nav-item {
+        @include hover-scale
+    }
+}
