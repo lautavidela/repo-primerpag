@@ -117,7 +117,7 @@ p {
   margin: 20px;
 }
 .contenedor-gestion-login .login-usuario .btn-entrar {
-  background-color: rgb(0, 0, 0);
+  background-color: #0084FF;
   color: white;
   border-radius: 50px;
   width: 100%;
@@ -125,13 +125,13 @@ p {
   font-weight: bold;
 }
 .contenedor-gestion-login .login-usuario .btn-entrar:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(208, 208, 208);
+  background-color: #0084FF;
+  color: white;
   transform: scale(1.02);
 }
 .contenedor-gestion-login .login-usuario .btn-entrar:active {
   transform: scale(0.95);
-  background-color: black;
+  background-color: #0372da;
 }
 
 /* PLAN */
