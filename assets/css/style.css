@@ -378,21 +378,33 @@ footer .redes-sociales .logo-facebook:hover {
     margin-bottom: 30px;
   }
   /* MI CUENTA */
-  .contenedor-gestion-login {
-    flex-direction: column;
-    padding-bottom: 40px;
+  .contenedor-mi-cuenta {
     display: flex;
   }
-  .contenedor-gestion-login .gestion-de-cuentas {
-    padding-left: 50px;
+  .contenedor-mi-cuenta .contenedor-gestion-login {
+    flex-direction: column;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-mi-cuenta .contenedor-gestion-login .gestion-de-cuentas {
     width: auto;
+    padding: 0;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-mi-cuenta .contenedor-gestion-login .gestion-de-cuentas .logo-mi-cuenta {
+    width: 200px;
+    height: 200px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
   }
-  .contenedor-gestion-login .gestion-de-cuentas .logo-mi-cuenta {
-    justify-content: center;
-  }
-  .contenedor-gestion-login .login-usuario {
+  .contenedor-mi-cuenta .contenedor-gestion-login .login-usuario {
     width: auto;
   }
   /* PLAN */

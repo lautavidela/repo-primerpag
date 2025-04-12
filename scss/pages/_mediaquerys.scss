@@ -86,27 +86,41 @@
     }
 
     /* MI CUENTA */
-    .contenedor-gestion-login {
-        flex-direction: column;
-        padding-bottom: 40px;
+
+    .contenedor-mi-cuenta{
         display: flex;
 
-        .gestion-de-cuentas {
-            padding-left: 50px;
-            width: auto;
-            align-items: center;
+        .contenedor-gestion-login {
+            flex-direction: column;
+            padding-bottom: 40px;
             justify-content: center;
-
-            .logo-mi-cuenta {
+            align-items: center;
+    
+            .gestion-de-cuentas {
+                width: auto;
+                padding: 0;
+                padding-bottom: 30px;
+                display: flex;
+                flex-direction: column;
                 justify-content: center;
+                align-items: center;
+    
+                .logo-mi-cuenta{
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+            }
+    
+            .login-usuario {
+                width: auto;
             }
         }
-
-        .login-usuario {
-            width: auto;
-        }
     }
-
+    
     /* PLAN */
     .container-grid-plan {
         display: none;
