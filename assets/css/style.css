@@ -380,14 +380,17 @@ footer .redes-sociales .logo-facebook:hover {
   /* MI CUENTA */
   .contenedor-gestion-login {
     flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    display: flex;
   }
   .contenedor-gestion-login .gestion-de-cuentas {
-    width: 300px;
-    padding-left: 20px;
+    padding-left: 30px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
   }
   .contenedor-gestion-login .gestion-de-cuentas .logo-mi-cuenta {
-    padding-left: 10px;
+    justify-content: center;
   }
   .contenedor-gestion-login .login-usuario {
     width: auto;
