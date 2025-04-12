@@ -4,7 +4,7 @@
 /* BARRA DE NAVEGACION */
 
 nav {
-    background-color: #b7b9b9;
+    background-color: $color-azul;
     
     .navbar-brand img {
         width: 90px;
@@ -13,5 +13,9 @@ nav {
 
     .nav-item {
         @include hover-scale
+    }
+
+    .nav-link {
+        color: white;
     }
 }

@@ -36,20 +36,20 @@
         margin: 20px;
 
         .btn-entrar {
-            background-color: $color-azul;
+            background-color: black;
             color: white;
             border-radius: 50px;
             width: 100%;
             padding: 10px;
             font-weight: bold;
             &:hover {
-                background-color: $color-azul;
+                background-color: black;
                 color: white;
                 transform: scale(1.02);
             }
             &:active {
                 transform: scale(0.95);
-                background-color: #0372da;
+                background-color: black;
             }
         }
     }
