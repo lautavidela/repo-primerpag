@@ -8,6 +8,7 @@
 
     .gestion-de-cuentas {
         padding-left: 100px;
+        padding-bottom: 70px;
         font-size: 18px;
 
         .logo-mi-cuenta {
@@ -27,7 +28,7 @@
         flex-direction: column;
         gap: $padding-general;
         align-self: center;
-        border: 1px solid #b7b9b9;
+        border: 1px solid #000000;
         border-radius: $border-radius;
         width: 700px;
         height: 400px;

@@ -96,6 +96,7 @@ p {
 }
 .contenedor-gestion-login .gestion-de-cuentas {
   padding-left: 100px;
+  padding-bottom: 70px;
   font-size: 18px;
 }
 .contenedor-gestion-login .gestion-de-cuentas .logo-mi-cuenta {
@@ -112,7 +113,7 @@ p {
   flex-direction: column;
   gap: 20px;
   align-self: center;
-  border: 1px solid #b7b9b9;
+  border: 1px solid #000000;
   border-radius: 10px;
   width: 700px;
   height: 400px;
