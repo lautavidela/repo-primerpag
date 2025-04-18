@@ -14,13 +14,13 @@
         width: $ancho-imagen;
         height: auto;
         border-radius: $border-radius;
-        @include hover-scale;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     }
 
     .actividad-2 img {
         width: $ancho-imagen;
         height: auto;
         border-radius: $border-radius;
-        @include hover-scale;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     }
 }

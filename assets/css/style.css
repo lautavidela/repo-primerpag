@@ -6,9 +6,6 @@
 }
 
 body {
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 100px;
   background-color: #cce5ff;
 }
 
@@ -61,6 +58,7 @@ nav .nav-link {
 }
 
 p {
+  font-size: 18px;
   text-align: center;
   padding: 20px;
 }
@@ -76,17 +74,13 @@ p {
   height: 500px;
   width: auto;
   border-radius: 20px;
-}
-.contenedor-info .imagen-donde-estamos:hover {
-  transform: scale(1.05);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 .contenedor-info .imagen-gimnasio {
   height: 500px;
   width: auto;
   border-radius: 20px;
-}
-.contenedor-info .imagen-gimnasio:hover {
-  transform: scale(1.05);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* MI CUENTA */
@@ -258,17 +252,13 @@ p {
   width: 500px;
   height: auto;
   border-radius: 10px;
-}
-.contenedor-flyers .actividad-1 img:hover {
-  transform: scale(1.05);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 .contenedor-flyers .actividad-2 img {
   width: 500px;
   height: auto;
   border-radius: 10px;
-}
-.contenedor-flyers .actividad-2 img:hover {
-  transform: scale(1.05);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* CONTACTO */
@@ -284,18 +274,16 @@ p {
 footer {
   display: flex;
   flex-direction: column;
-  height: 110px;
+  height: auto;
   width: 100%;
-  background-color: black;
+  background-color: rgb(20, 20, 20);
   color: white;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
 }
 footer .redes-sociales {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 20px;
 }
@@ -312,6 +300,17 @@ footer .redes-sociales .logo-facebook {
 }
 footer .redes-sociales .logo-facebook:hover {
   transform: scale(1.05);
+}
+footer .redes-sociales .logo-whatsapp {
+  height: auto;
+  width: 30px;
+}
+footer .redes-sociales .logo-whatsapp:hover {
+  transform: scale(1.05);
+}
+footer .barra-footer {
+  width: 100%;
+  background-color: black;
 }
 
 /* MEDIA QUERYS */
@@ -344,6 +343,17 @@ footer .redes-sociales .logo-facebook:hover {
     color: black;
   }
   /* INICIO */
+  .text-home {
+    padding: 50px 30px 0 30px;
+    font-size: 16px;
+  }
+  .text-home_2 {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  .contenedor-info {
+    box-sizing: border-box;
+  }
   .contenedor-info .imagen-donde-estamos,
   .contenedor-info .imagen-gimnasio {
     width: 300px;
@@ -419,7 +429,7 @@ footer .redes-sociales .logo-facebook:hover {
   /* CONTACTO */
   /* FOOTER */
   footer {
-    height: 135px;
+    height: auto;
   }
 }
 

@@ -15,6 +15,7 @@
 }
 
 p {
+    font-size: 18px;
     text-align: center;
     padding: $padding-general;
 }
@@ -30,13 +31,13 @@ p {
     height: $ancho-imagen;
     width: auto;
     border-radius: $border-radius-grande;
-    @include hover-scale
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     }
     
     .imagen-gimnasio {
     height: $ancho-imagen;
     width: auto;
     border-radius: $border-radius-grande;
-    @include hover-scale
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     }
 }

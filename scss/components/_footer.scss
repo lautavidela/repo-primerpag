@@ -5,18 +5,16 @@
 footer {
     display: flex;
     flex-direction: column;
-    height: 110px;
+    height: auto;
     width: 100%;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
 
     .redes-sociales {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         margin-bottom: 20px;
 
@@ -30,6 +28,17 @@ footer {
             height: auto;
             width: 30px;
             @include hover-scale;
-        }        
+        }
+        
+        .logo-whatsapp {
+            height: auto;
+            width: 30px;
+            @include hover-scale;
+        }
+    }
+
+    .barra-footer {
+        width: 100%;
+        background-color: black;
     }
 }
