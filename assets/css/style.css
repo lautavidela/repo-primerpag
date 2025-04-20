@@ -383,6 +383,9 @@ footer .barra-footer {
     transform: none;
     color: black;
   }
+  nav .navbar-brand img {
+    width: 50px;
+  }
   /* INICIO */
   .text-home {
     padding: 50px 30px 0 30px;
