@@ -8,7 +8,8 @@ nav {
     
     .navbar-brand img {
         width: 90px;
-        @include hover-scale
+        @include hover-scale;
+        padding: 15px 0 15px 0;
     }
 
     .nav-item {

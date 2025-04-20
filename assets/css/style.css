@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Mulish", serif;
+  font-family: "Mulish", sans-serif;
 }
 
 body {
@@ -35,6 +35,7 @@ nav {
 }
 nav .navbar-brand img {
   width: 90px;
+  padding: 15px 0 15px 0;
 }
 nav .navbar-brand img:hover {
   transform: scale(1.05);
@@ -47,6 +48,20 @@ nav .nav-link {
 }
 
 /* INICIO */
+.contenedor-logo-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.contenedor-logo-inicio .logo-inicio {
+  width: 80px;
+}
+
+.titulo-inicio {
+  padding: 0 0 30px 0;
+}
+
 .contenedor-imagen-inicio {
   width: 100%;
   height: 200px;
@@ -87,19 +102,23 @@ p {
 .contenedor-gestion-login {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .contenedor-gestion-login .gestion-de-cuentas {
-  padding-left: 100px;
-  padding-bottom: 70px;
+  padding-left: 60px;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contenedor-gestion-login .gestion-de-cuentas .logo-mi-cuenta {
-  width: auto;
-  height: 300px;
+  width: 300px;
+  height: auto;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .contenedor-gestion-login .gestion-de-cuentas .lista-gestion-de-cuentas {
-  padding-left: 20px;
   padding-top: 20px;
 }
 .contenedor-gestion-login .login-usuario {
@@ -218,19 +237,23 @@ p {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  list-style-image: url(../img/check.png);
 }
 .container-cards .card-1 .ul-cards-mobile .li-cards-mobile,
 .container-cards .card-2 .ul-cards-mobile .li-cards-mobile,
 .container-cards .card-3 .ul-cards-mobile .li-cards-mobile {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
+  text-align: left;
+  padding-right: 5px;
 }
 .container-cards .card-1 .ul-cards-mobile .li-cards-mobile .svg-mobile,
 .container-cards .card-2 .ul-cards-mobile .li-cards-mobile .svg-mobile,
 .container-cards .card-3 .ul-cards-mobile .li-cards-mobile .svg-mobile {
-  width: 40px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  align-self: center;
 }
 .container-cards .card-1 .precio-card,
 .container-cards .card-2 .precio-card,
@@ -238,6 +261,24 @@ p {
   width: 100%;
   background-color: #0084FF;
   border-radius: 0 0 10px 10px;
+}
+.container-cards .card-1 .precio-card .precio-card-1,
+.container-cards .card-2 .precio-card .precio-card-1,
+.container-cards .card-3 .precio-card .precio-card-1 {
+  text-align: start;
+  padding-bottom: 0;
+  margin: 0;
+  font-size: 12px;
+}
+.container-cards .card-1 .precio-card .precio-card-2,
+.container-cards .card-2 .precio-card .precio-card-2,
+.container-cards .card-3 .precio-card .precio-card-2 {
+  padding: 0;
+}
+.container-cards .card-1 .precio-card .precio-card-2 b,
+.container-cards .card-2 .precio-card .precio-card-2 b,
+.container-cards .card-3 .precio-card .precio-card-2 b {
+  font-size: 20px;
 }
 
 /* ACTIVIDADES */
@@ -407,12 +448,13 @@ footer .barra-footer {
     align-items: center;
   }
   .contenedor-mi-cuenta .contenedor-gestion-login .gestion-de-cuentas .logo-mi-cuenta {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    padding-top: 40px;
   }
   .contenedor-mi-cuenta .contenedor-gestion-login .login-usuario {
     width: auto;
