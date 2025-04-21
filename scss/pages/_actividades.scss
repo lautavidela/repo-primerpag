@@ -3,6 +3,12 @@
 
 /* ACTIVIDADES */
 
+section {
+    h1 {
+        font-weight: bolder;
+    }
+}
+
 .contenedor-flyers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
